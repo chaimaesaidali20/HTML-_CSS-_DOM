@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Portfolio Chaimae</title>
+				<link rel="stylesheet" href="style.css">
+</head>
+
+	<body>
+		<header>
+			<h1>Bienvenue sur mon Portfolio</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="#about">À propos</a>
+					</li>
+					<li>
+						<a href="#projects">Projets</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="about">
+				<h2>À propos de moi</h2>
+				<img src="portrait.jpg" alt="Photo de Chaimae" class="portrait">
+					<p>Je suis Chaimae, développeuse débutante passionnée par le web.</p>
+				</section>
+
+			<section id="projects">
+				<h2>Mes projets</h2>
+
+				<article class="project-card">
+					<img src="project1.png" alt="Capture du projet 1">
+						<h3>Projet 1 : Site HTML</h3>
+						<button class="details-btn">Voir détails</button>
+						<p class="details hidden">Ce projet est un site simple en HTML et CSS.</p>
+					</article>
+
+				<article class="project-card">
+					<img src="project2.png" alt="Capture du projet 2">
+						<h3>Projet 2 : Application JS</h3>
+						<button class="details-btn">Voir détails</button>
+						<p class="details hidden">Application interactive créée avec JavaScript.</p>
+					</article>
+			</section>
+
+			<section id="contact">
+				<h2>Contact</h2>
+				<form>
+					<input type="text" placeholder="Votre nom" required="">
+						<input type="email" placeholder="Votre email" required="">
+							<textarea placeholder="Votre message" required=""></textarea>
+							<button type="submit">Envoyer</button>
+						</form>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>

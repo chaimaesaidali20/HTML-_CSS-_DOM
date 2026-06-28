@@ -1,0 +1,52 @@
+﻿/* Large écrans (PC + écrans larges) */
+@media (min-width: 1200px) {
+    section {
+        max-width: 1100px;
+        margin: auto; /* Ajouté : centre la section */
+    }
+
+    .project-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center; /* Ajouté : évite les décalages */
+    }
+}
+
+/* Tablettes */
+@media (max-width: 900px) {
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap; /* Ajouté : évite que le menu déborde */
+    }
+
+    .project-card {
+        padding: 15px;
+        grid-template-columns: 1fr; /* Ajouté : évite les colonnes serrées */
+    }
+}
+
+/* Petits téléphones */
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1.4rem;
+        text-align: center; /* Ajouté : meilleur rendu sur mobile */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        padding: 0; /* Ajouté : évite les débordements */
+    }
+
+    .portrait {
+        width: 120px;
+        display: block;
+        margin: auto; /* Ajouté : centre l’image */
+    }
+
+    button {
+        width: 100%;
+        padding: 12px; /* Ajouté : meilleur confort tactile */
+    }
+}
